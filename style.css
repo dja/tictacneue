@@ -19,13 +19,13 @@ a {
 	font-family: 'Helvetica Neue';
 	font-weight: 100;
 	font-size: 80px;
-	color: #ff0080;
+	color: #fdd654;
 }
 h1 {
 	font-family: 'Helvetica Neue';
 	font-weight: 100;
 	font-size: 50px;
-	color: #ff0080;
+	color: #fdd654;
 }
 .container {
 	text-align: center;
@@ -59,14 +59,14 @@ h1 {
 	font-family: 'Helvetica Neue';
 	font-weight: 100;
 	font-size: 80px;
-	color: #ff0080;
+	color: #fdd654;
 }
 .top {
 
 }
 .middle {
-	border-top: 1px solid #ff0080;
-	border-bottom: 1px solid #ff0080;
+	border-top: 1px solid #fdd654;
+	border-bottom: 1px solid #fdd654;
 }
 .bottom {
 
@@ -75,8 +75,8 @@ h1 {
 
 }
 .center {
-	border-left: 1px solid #ff0080;
-	border-right: 1px solid #ff0080;
+	border-left: 1px solid #fdd654;
+	border-right: 1px solid #fdd654;
 }
 .right {
 
@@ -87,7 +87,7 @@ h1 {
 	font-size: 40px;
 	font-family: 'Helvetica Neue';
 	font-weight: 100;
-	color: #ff0080;
+	color: #fdd654;
 }
 .placeholder {
 	visibility: hidden;
