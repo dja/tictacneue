@@ -1,0 +1,90 @@
+body {
+			margin: 0;
+			background: url('images/blurbg.jpg') no-repeat fixed;
+		}
+		.blurbg {
+			filter: blur(2px);
+			-webkit-filter: blur(2px);
+			background-color: (255,255,255,0.3);
+		}
+		header {
+			width: auto;
+			text-align: center;
+			padding-bottom: 10px;
+		}
+		a {
+			font-family: 'Helvetica Neue';
+			font-weight: 100;
+			font-size: 80px;
+			color: #ff0080;
+		}
+		h1 {
+			font-family: 'Helvetica Neue';
+			font-weight: 100;
+			font-size: 80px;
+			color: #ff0080;
+		}
+		.container {
+			text-align: center;
+			vertical-align: middle;
+			margin: 0 auto;
+		}
+		#gameboard {
+			margin-bottom: 30px;
+		}
+		.column {
+			display: inline-block;
+			height: auto;
+			width: 100px;
+			margin: -2px;
+			padding: none;
+		}
+		.cell {
+			width: 100px;
+			height: 100px;
+			max-width: 100px;
+			max-height: 100px;
+			text-align: center;
+		}
+		.top {
+
+		}
+		.middle {
+			border-top: 1px solid #ff0080;
+			border-bottom: 1px solid #ff0080;
+		}
+		.bottom {
+
+		}
+		.left {
+
+		}
+		.center {
+			border-left: 1px solid #ff0080;
+			border-right: 1px solid #ff0080;
+		}
+		.right {
+
+		}
+		.simplebtn {
+			background: none;
+			border: none;
+			font-size: 40px;
+			font-family: 'Helvetica Neue';
+			font-weight: 100;
+			color: #ff0080;
+		}
+		footer {
+			background-color: #fdfdfd;
+			padding: 40px;
+			font-size: 30px;
+			font-family: 'Helvetica Neue';
+			font-weight: 100;
+			width: auto;
+			height: 40px;
+		}
+		footer a:link, footer a:visited, footer a:hover {
+			color: #efefef;
+			font-size: 30px;
+			text-decoration: none;
+		}
