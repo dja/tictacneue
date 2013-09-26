@@ -45,7 +45,8 @@ h1 {
 	height: 100%;
 }
 #gameboard {
-	margin: 0 5% 30px 5%;
+	margin: 0 auto;
+	margin-bottom: 30px;
 	width: 300px;
 }
 .column {
