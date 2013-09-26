@@ -6,6 +6,7 @@ html {
 }
 body {
 	height: 100%;
+	background-color: #232323;
 	background: url('img/bg.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -90,7 +91,7 @@ h1 {
 	height: 40px;
 }
 footer {
-	background-color: #fdfdfd;
+	background-color: rgba(253, 253, 253, 0.2);
 	padding: 40px;
 	font-size: 30px;
 	font-family: 'Helvetica Neue';
