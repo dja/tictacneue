@@ -1,6 +1,13 @@
+* {
+	margin: 0;
+}
+html {
+	height: 100%;
+}
 body {
+	height: 100%;
 	margin: 0 auto;
-	background: url('images/bg.jpg') no-repeat center center fixed;
+	background: url('img/bg.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -31,8 +38,11 @@ h1 {
 .container {
 	text-align: center;
 	vertical-align: middle;
-	margin: 0 auto;
+	margin: 0 auto -40px;
 	width: 450px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
 }
 #gameboard {
 	margin: 0 5% 30px 5%;
@@ -79,6 +89,9 @@ h1 {
 	font-family: 'Helvetica Neue';
 	font-weight: 100;
 	color: #ff0080;
+}
+.push {
+	height: 40px;
 }
 footer {
 	background-color: #fdfdfd;

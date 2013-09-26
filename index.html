@@ -1,45 +1,39 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
 
-<html>
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
 
-<head>
-	<style type="text/css">
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
 
-	input {
-		color: white;
-		border: 1px solid #b3b3b3;
-		border-radius: 2px;
-		padding: 10px 20px;
-		font-family: 'Josefin Slab';
-		font-variant: 'Light';
-		text-transform: uppercase;
-		font-size: 24px;
-		text-shadow: 1px 1px 1px #333333;
-		box-shadow: 0 0 3px #999999;
-	}
-	#btn1 {
-		background-color: #4f81ff;
-	}
-	#btn2 {
-		background-color: #ff6666;
-	}
+    <a href="ticTacToe.html">Tic Tac Toe Game!</a>
 
-	</style>
+    <input type="button" value="Tic Tac Toe" onclick="navTicTacToe()" />
 
-</head>
+    <script type="text/javascript">
+        function navTicTacToe() {
+            location.href = "tictactoe.html"
+        }
+    </script>
 
-<body>
-	
-	<a href="ticTacToe.html">Tic Tac Toe Game!</a>
+        <script src="js/main.js"></script>
 
-	<input type="button" value="Tic Tac Toe" onclick="navTicTacToe()" />
-
-	<script type="text/javascript">
-		function navTicTacToe() {
-			location.href = "tictactoe.html"
-		}
-	</script>
-
-</body>
-
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
 </html>
