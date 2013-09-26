@@ -1,12 +1,12 @@
 body {
 	margin: 0;
-	background: url('images/blurbg.jpg') no-repeat fixed;
+	background: url('images/bg.jpg') no-repeat fixed;
 }
-.blurbg {
+/*.blurbg {
 	filter: blur(2px);
 	-webkit-filter: blur(2px);
 	background-color: (255,255,255,0.3);
-}
+}*/
 header {
 	width: auto;
 	text-align: center;
