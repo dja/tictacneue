@@ -84,6 +84,9 @@ h1 {
 	font-weight: 100;
 	color: #ff0080;
 }
+.placeholder {
+	visibility: hidden;
+}
 .push {
 	height: 40px;
 }

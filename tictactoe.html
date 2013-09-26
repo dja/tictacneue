@@ -16,6 +16,7 @@
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
 <link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="js/script.js"></script>
 
 </head>
 
@@ -24,22 +25,25 @@
 <h1>TicTacNeue</h1>
 </header>
 
+
+
+
 <div class="container">
 	<div id="gameboard">
-		<div class="column">
-			<div class="cell top left" id="c1"><a></a></div>
-			<div class="cell middle left" id="c4"><a></a></div>
-			<div class="cell bottom left" id="c7"><a>X</a></div>
+		<div class="column" onclick="playIt()">
+			<div class="cell top left" id="cell1_1"><a class="placeholder">.</a></div>
+			<div class="cell middle left" id="cell2_1"><a class="placeholder">.</a></div>
+			<div class="cell bottom left" id="cell3_1"><a class="placeholder">.</a></div>
 		</div>
-		<div class="column">
-			<div class="cell top center" id="c2"><a></a></div>
-			<div class="cell middle center" id="c5"><a>X</a></div>
-			<div class="cell bottom center" id="c8"><a>O</a></div>
+		<div class="column" onclick="playIt()">
+			<div class="cell top center" id="cell1_2"><a class="placeholder">.</a></div>
+			<div class="cell middle center" id="cell2_2"><a class="placeholder">.</a></div>
+			<div class="cell bottom center" id="cell3_2"><a class="placeholder">.</a></div>
 		</div>
-		<div class="column">
-			<div class="cell top right" id="c3"><a>X</a></div>
-			<div class="cell middle right" id="c6"><a>O</a></div>
-			<div class="cell bottom right" id="c9"><a>!</a></div>
+		<div class="column" onclick="playIt()">
+			<div class="cell top right" id="cell1_3"><a class="placeholder">.</a></div>
+			<div class="cell middle right" id="cell2_3"><a class="placeholder">.</a></div>
+			<div class="cell bottom right" id="cell3_3"><a class="placeholder">.</a></div>
 		</div>
 	</div>
 	<div>
