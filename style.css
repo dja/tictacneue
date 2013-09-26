@@ -35,7 +35,8 @@ h1 {
 	width: 450px;
 }
 #gameboard {
-	margin: 0 auto 30px auto;
+	margin: 0 5% 30px 5%;
+	width: 300px;
 }
 .column {
 	display: inline-block;
