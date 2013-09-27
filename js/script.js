@@ -1,9 +1,10 @@
-var turn = 2;
+var turn = 1;
 var playedCells = 0;
 var alreadyWon = false;
 
 function playBall(numPlayr){
 	turn = numPlayr;
+	document.getElementById('start').style.display = 'none';
 }
 
 if (typeof window.DeviceMotionEvent != 'undefined') {
@@ -41,7 +42,7 @@ if (typeof window.DeviceMotionEvent != 'undefined') {
 
 function playIt(){
 	if (alreadyWon == false && event.target.className.split(" ")[3] != "played") {
-		if (turn % 2 == 0) {
+		if (turn % 2 != 0) {
 			event.target.classList.add('played');
 			playedCells++;
 			event.target.innerHTML = "X";

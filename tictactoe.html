@@ -41,11 +41,13 @@
 </header>
 
 <div class="container">
-		<input type="button" value="Start Game &rsaquo;" class="simplebtn" id="startgame" onclick="switchVisibility('startgame', 'playrs');">
+	<div class="menu" id="start">
+		<input type="button" value="Start Game &rsaquo;" class="simplebtn" id="startgame" onclick="switchVisibility('startgame', 'playr1'); toggleVisibility('playr2')">
 		<br />
-		<input type="button" value="Choose X &rsaquo;" class="simplebtn" id="playrs" onclick="switchVisibility('playrs', 'gameboard'); playBall(2);">
+		<input type="button" value="Choose X &rsaquo;" class="simplebtn" id="playr1" onclick="switchVisibility('playr1', 'gameboard'); toggleVisibility('playr2'); playBall(1);">
 		<br />
-		<input type="button" value="Choose O &rsaquo;" class="simplebtn" id="playrs" onclick="switchVisibility('playrs', 'gameboard'); playBall(1);">
+		<input type="button" value="Choose O &rsaquo;" class="simplebtn" id="playr2" onclick="switchVisibility('playr2', 'gameboard'); toggleVisibility('playr1'); playBall(2);">
+	</div>
 
 	<div id="gameboard">
 		<div class="column" onclick="playIt();">

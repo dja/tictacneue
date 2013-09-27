@@ -33,12 +33,9 @@ h1 {
 }
 .menu {
 	position: absolute;
-	top: 50%;
+	top: 35%;
 	margin: 0 auto;
-	width: 40%;
-}
-#start {
-	text-align: center;
+	width: 450px;
 }
 .container {
 	text-align: center;
@@ -107,7 +104,11 @@ h1 {
 	text-align: center;
 	visibility: visible;
 }
-#playrs {
+#playr1 {
+	text-align: center;
+	visibility: hidden;
+}
+#playr2 {
 	text-align: center;
 	visibility: hidden;
 }
@@ -115,7 +116,7 @@ h1 {
 	visibility: hidden;
 }
 .push {
-	height: 84px;
+	height: 140px;
 }
 footer {
 	background-color: rgba(253, 253, 253, 0.2);
