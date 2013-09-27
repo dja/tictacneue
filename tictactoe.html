@@ -26,6 +26,8 @@
 </header>
 
 <div class="container">
+		<input type="button" value="Start Game &rsaquo;" class="simplebtn" id="startgame" onclick="switchVisibility('startgame', 'gameboard');">
+
 	<div id="gameboard">
 		<div class="column" onclick="playIt()">
 			<div class="cell top left" id="cell0_0">&nbsp;</div>
@@ -45,7 +47,7 @@
 	</div>
 	<div>
 		<div style="display:none;">
-		    <audio id="playagain" src="sounds/playagain.mp3" controls preload="auto" autobuffer></audio>
+		    <audio id="playagainsound" src="sounds/playagain.mp3" controls preload="auto" autobuffer></audio>
 		</div>
 
 		<script>
@@ -54,7 +56,7 @@
 		setTimeout( function() { window.location.reload(); }, 1600); }
 		</script>
 
-		<input type="button" value="Play Again &rsaquo;" class="simplebtn" id="playagain" onclick="EvalSound('playagain')">
+		<input type="button" value="Play Again &rsaquo;" class="simplebtn" id="playagain" onclick="EvalSound('playagainsound')">
 	</div>
 	<div class="push"></div>
 </div>

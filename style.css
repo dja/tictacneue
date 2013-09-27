@@ -27,6 +27,15 @@ h1 {
 	font-size: 50px;
 	color: #fdd654;
 }
+.menu {
+	position: absolute;
+	top: 50%;
+	margin: 0 auto;
+	width: 40%;
+}
+#start {
+	text-align: center;
+}
 .container {
 	text-align: center;
 	vertical-align: middle;
@@ -41,6 +50,7 @@ h1 {
 	margin: 0 auto;
 	margin-bottom: 30px;
 	width: 300px;
+	visibility: hidden;
 }
 .column {
 	display: inline-block;
@@ -55,7 +65,7 @@ h1 {
 	max-width: 100px;
 	max-height: 100px;
 	text-align: center;
-	
+
 	font-family: 'Helvetica Neue';
 	font-weight: 100;
 	font-size: 80px;
@@ -89,7 +99,12 @@ h1 {
 	font-weight: 100;
 	color: #fdd654;
 }
-.placeholder {
+#startgame {
+	text-align: center;
+	/*margin-top:40%;*/
+	visibility: visible;
+}
+#playagain {
 	visibility: hidden;
 }
 .push {
