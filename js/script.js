@@ -56,6 +56,7 @@ function navCells(){
 		alert("No one won.");
 	}
 	if(window.DeviceMotionEvent){
+		window.addEventListener('devicemotion', deviceMotionHandler, false);
 		var shakeGame = confirm("Do you want to start a new game?");
 		if (shakeGame == true){
 			window.location.reload();
