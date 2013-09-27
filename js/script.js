@@ -55,6 +55,12 @@ function navCells(){
 		toggleVisibility('playagain');
 		alert("No one won.");
 	}
+	if(window.DeviceMotionEvent){
+		var shakeGame = confirm("Do you want to start a new game?");
+		if (shakeGame == true){
+			window.location.reload();
+		}
+	}
 }
 
 function switchVisibility(id1, id2){
