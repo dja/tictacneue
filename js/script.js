@@ -25,10 +25,10 @@ function navCells(){
 		}
 	}
 	for(x=0; x<=2; ++x){
-		if(cellArray[0][x] == cellArray[1][x] && cellArray[1][x] == cellArray[2][x] && cellArray[0][x] != "<a class=\"placeholder\">.</a>"){
+		if(cellArray[0][x] == cellArray[1][x] && cellArray[1][x] == cellArray[2][x] && cellArray[0][x] != "&nbsp;"){
 			alert(cellArray[0][x] + "WON!");
 		}
-		if(cellArray[x][0] == cellArray[x][1] && cellArray[x][1] == cellArray[x][2] && cellArray[x][0] != "<a class=\"placeholder\">.</a>"){
+		if(cellArray[x][0] == cellArray[x][1] && cellArray[x][1] == cellArray[x][2] && cellArray[x][0] != "&nbsp;"){
 			alert(cellArray[x][0] + "WON!");
 		}
 	}
