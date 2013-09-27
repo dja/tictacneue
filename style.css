@@ -122,3 +122,9 @@ footer a:link, footer a:visited, footer a:hover {
 	font-size: 30px;
 	text-decoration: none;
 }
+
+@media (max-width: 450px){
+	* html, body {
+		background-size: 450px;
+	}
+}
