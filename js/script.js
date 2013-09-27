@@ -24,7 +24,7 @@ if (typeof window.DeviceMotionEvent != 'undefined') {
         if (change > sensitivity) {
             var shakeGame = confirm("Do you want to start a new game?");
 			if (shakeGame == true){
-				window.location.reload();
+				setTimeout( function() { window.location.reload(); }, 1600);
 			}
         }
 
