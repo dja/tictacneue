@@ -14,19 +14,19 @@ header {
 	text-align: center;
 	padding-bottom: 10px;
 	margin: 0 auto;
-	border-top: 2px solid #fdd654;
+	border-top: 2px solid #ef4d87;
 }
 a {
 	font-family: 'Helvetica Neue';
 	font-weight: 100;
 	font-size: 80px;
-	color: #fdd654;
+	color: #ef4d87;
 }
 h1 {
 	font-family: 'Helvetica Neue';
 	font-weight: 100;
 	font-size: 50px;
-	color: #fdd654;
+	color: #ef4d87;
 }
 .menu {
 	position: absolute;
@@ -43,6 +43,7 @@ h1 {
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
+	overflow: auto;
 }
 #gameboard {
 	margin: 0 auto;
@@ -67,14 +68,14 @@ h1 {
 	font-family: 'Helvetica Neue';
 	font-weight: 100;
 	font-size: 60px;
-	color: #fdd654;
+	color: #ef4d87;
 }
 .top {
 
 }
 .middle {
-	border-top: 1px solid #fdd654;
-	border-bottom: 1px solid #fdd654;
+	border-top: 1px solid #ef4d87;
+	border-bottom: 1px solid #ef4d87;
 }
 .bottom {
 
@@ -83,8 +84,8 @@ h1 {
 
 }
 .center {
-	border-left: 1px solid #fdd654;
-	border-right: 1px solid #fdd654;
+	border-left: 1px solid #ef4d87;
+	border-right: 1px solid #ef4d87;
 }
 .right {
 
@@ -95,7 +96,7 @@ h1 {
 	font-size: 40px;
 	font-family: 'Helvetica Neue';
 	font-weight: 100;
-	color: #fdd654;
+	color: #ef4d87;
 }
 #startgame {
 	text-align: center;

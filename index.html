@@ -25,14 +25,33 @@
 <script type="text/javascript" src="js/supersized.core.3.2.1.min.js"></script>
 
 <script type="text/javascript">
-	
-	jQuery(function($){
-		
-		$.supersized({
-			slides  :  	[ {image : 'img/bg.jpg', title : ''} ]
-		});
-    });
-    
+var rand_style_no = Math.ceil(5 * Math.random());
+
+jQuery(function($){
+
+$.supersized({
+	slides  :  	[ {image : 'img/'+rand_style_no+'bg.jpg', title : ''} ]
+});
+});
+
+switch(rand_style_no)
+{
+	case 1:
+		document.write('<link rel="stylesheet" href="css/1.css" type="text/css">');
+		break;
+	case 2:
+		document.write('<link rel="stylesheet" href="css/2.css" type="text/css">');
+		break;
+	case 3:
+		document.write('<link rel="stylesheet" href="css/3.css" type="text/css">');
+		break;
+	case 4:
+		document.write('<link rel="stylesheet" href="css/4.css" type="text/css">');
+		break;
+	default:
+		document.write('<link rel="stylesheet" href="style.css" type="text/css">');
+		break;
+	}
 </script>
 </head>
 
@@ -78,7 +97,7 @@
 </div>
 
 <footer>
-<div style=""><a href="http://snka.tk" target="_blank">&copy; snka.tk</a></div>
+<div><a href="http://snka.tk" target="_blank">&copy; snka.tk</a></div>
 </footer>
 
 </body>
