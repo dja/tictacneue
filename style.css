@@ -52,6 +52,7 @@ h1 {
 	margin-bottom: 30px;
 	max-width: 300px;
 	visibility: hidden;
+	z-index: -1;
 }
 .column {
 	display: inline-block;
@@ -92,6 +93,20 @@ h1 {
 .right {
 
 }
+#win {
+	display: none;
+	z-index:1000;
+	margin-top: -220px;
+	padding: 80px 20px;
+	background-color: rgba(255,255,255,0.8);
+}
+#oxgame {
+	display: none;
+	z-index:1000;
+	margin-top: -220px;
+	padding: 80px 20px;
+	background-color: rgba(255,255,255,0.8);
+}
 .simplebtn {
 	background: none;
 	border: none;
@@ -109,6 +124,9 @@ h1 {
 }
 #playr2 {
 	text-align: center;
+	display: none;
+}
+#end {
 	display: none;
 }
 #playagainbtn {

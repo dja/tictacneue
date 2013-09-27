@@ -4,7 +4,7 @@ var alreadyWon = false;
 
 function playBall(numPlayr){
 	turn = numPlayr;
-	document.getElementById('start').style.display = 'none';
+	toggleDisplay('start');
 }
 
 if (typeof window.DeviceMotionEvent != 'undefined') {
@@ -69,28 +69,32 @@ function navCells(){
 	}
 	for(x=0; x<=2; ++x){
 		if(cellArray[0][x] == cellArray[1][x] && cellArray[1][x] == cellArray[2][x] && cellArray[0][x] != "&nbsp;"){
-			alreadyWon = true;
-			alert(cellArray[0][x] + " WON!");
+			toggleDisplay('end');
+			toggleDisplay('win');
 			toggleVisibility('playagainbtn');
+			alreadyWon = true;
 		}
-		if(cellArray[x][0] == cellArray[x][1] && cellArray[x][1] == cellArray[x][2] && cellArray[x][0] != "&nbsp;"){
-			alreadyWon = true;
-			alert(cellArray[x][0] + " WON!");
+		else if(cellArray[x][0] == cellArray[x][1] && cellArray[x][1] == cellArray[x][2] && cellArray[x][0] != "&nbsp;"){
+			toggleDisplay('end');
+			toggleDisplay('win');
 			toggleVisibility('playagainbtn');
+			alreadyWon = true;
 		}
 	}
 	if(cellArray[0][0] == cellArray[1][1] && cellArray[1][1] == cellArray[2][2] && cellArray[0][0] != "&nbsp;" ){
-		alreadyWon = true;
-		alert(cellArray[0][0] + " WON!");
+		toggleDisplay('end');
+		toggleDisplay('win');
 		toggleVisibility('playagainbtn');
+		alreadyWon = true;
 	}
-	if(cellArray[2][0] == cellArray[1][1] && cellArray[1][1] == cellArray[0][2] && cellArray[2][0] != "&nbsp;" ){
-		alreadyWon = true;
-		alert(cellArray[2][0] + " WON!");
+	else if(cellArray[2][0] == cellArray[1][1] && cellArray[1][1] == cellArray[0][2] && cellArray[2][0] != "&nbsp;" ){
+		toggleDisplay('end');
+		toggleDisplay('win');
 		toggleVisibility('playagainbtn');
+		alreadyWon = true;
 	}
 	else if(playedCells == 9 && alreadyWon != true){
-		alert("No one won.");
+		toggleDisplay('oxgame');
 		toggleVisibility('playagainbtn');
 	}
 }
@@ -111,15 +115,15 @@ function toggleVisibility(id){
 }
 function switchDisplay(id1, id2){
 	document.getElementById(id1).style.display = 'none';
-	document.getElementById(id2).style.display = 'inline';
+	document.getElementById(id2).style.display = 'inherit';
 }
 function toggleDisplay(id){
 	var dis = document.getElementById(id).style.display;
-	if( dis == 'inline'){
+	if( dis != 'none'){
 		document.getElementById(id).style.display = 'none';
 	}
 	else {
-		document.getElementById(id).style.display = 'inline';
+		document.getElementById(id).style.display = 'inherit';
 	}
 }
 
