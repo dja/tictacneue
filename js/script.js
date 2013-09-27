@@ -109,6 +109,15 @@ function toggleVisibility(id){
 		document.getElementById(id).style.visibility = 'visible';
 	}
 }
+// function toggleDisplay(id){
+// 	var dis = document.getElementById(id).style.display;
+// 	if( dis == 'inline'){
+// 		document.getElementById(id).style.display = 'none';
+// 	}
+// 	else {
+// 		document.getElementById(id).style.display = 'inline';
+// 	}
+// }
 
 function EvalSound(soundobj){
 	var thissound=document.getElementById(soundobj);
