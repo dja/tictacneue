@@ -9,7 +9,7 @@ function playBall(numPlayr){
 
 if (typeof window.DeviceMotionEvent != 'undefined') {
     // Shake sensitivity (a lower number is more)
-    var sensitivity = 40;
+    var sensitivity = 50;
 
     // Position variables
     var x1 = 0, y1 = 0, z1 = 0, x2 = 0, y2 = 0, z2 = 0;
@@ -29,7 +29,7 @@ if (typeof window.DeviceMotionEvent != 'undefined') {
         if (change > sensitivity) {
             var shakeGame = confirm("Do you want to start a new game?");
 			if (shakeGame == true){
-				setTimeout( function() { window.location.reload(); }, 1600);
+				window.location.reload();
 			}
         }
 
