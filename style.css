@@ -33,7 +33,7 @@ h1 {
 }
 .menu {
 	position: absolute;
-	top: 35%;
+	top: 25%;
 	margin: 0 auto;
 	width: 450px;
 }
@@ -102,15 +102,14 @@ h1 {
 }
 #startgame {
 	text-align: center;
-	visibility: visible;
 }
 #playr1 {
 	text-align: center;
-	visibility: hidden;
+	display: none;
 }
 #playr2 {
 	text-align: center;
-	visibility: hidden;
+	display: none;
 }
 #playagainbtn {
 	visibility: hidden;
