@@ -14,19 +14,19 @@ header {
 	text-align: center;
 	padding-bottom: 10px;
 	margin: 0 auto;
-	border-top: 2px solid #ef4d87;
+	border-top: 2px solid #dc145b;
 }
 a {
 	font-family: 'Helvetica Neue';
 	font-weight: 100;
 	font-size: 80px;
-	color: #ef4d87;
+	color: #dc145b;
 }
 h1 {
 	font-family: 'Helvetica Neue';
 	font-weight: 100;
 	font-size: 50px;
-	color: #ef4d87;
+	color: #dc145b;
 }
 .menu {
 	position: absolute;
@@ -68,14 +68,14 @@ h1 {
 	font-family: 'Helvetica Neue';
 	font-weight: 100;
 	font-size: 60px;
-	color: #ef4d87;
+	color: #dc145b;
 }
 .top {
 
 }
 .middle {
-	border-top: 1px solid #ef4d87;
-	border-bottom: 1px solid #ef4d87;
+	border-top: 1px solid #dc145b;
+	border-bottom: 1px solid #dc145b;
 }
 .bottom {
 
@@ -84,8 +84,8 @@ h1 {
 
 }
 .center {
-	border-left: 1px solid #ef4d87;
-	border-right: 1px solid #ef4d87;
+	border-left: 1px solid #dc145b;
+	border-right: 1px solid #dc145b;
 }
 .right {
 
@@ -96,7 +96,7 @@ h1 {
 	font-size: 40px;
 	font-family: 'Helvetica Neue';
 	font-weight: 100;
-	color: #ef4d87;
+	color: #dc145b;
 }
 #startgame {
 	text-align: center;
