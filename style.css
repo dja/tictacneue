@@ -1,13 +1,11 @@
-html {
-	height: 100%;
-}
-body {
+* html, body {
 	height: 100%;
 	background-color: #232323;
 	background: url('img/bg.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
+	min-width: 450px;
 }
 header {
 	width: auto;
@@ -39,7 +37,7 @@ h1 {
 .container {
 	text-align: center;
 	vertical-align: middle;
-	margin: 0 auto -40px;
+	margin: 0 auto -40px auto;
 	width: 450px;
 	height: 800px;
 	min-height: 100%;
@@ -49,26 +47,26 @@ h1 {
 #gameboard {
 	margin: 0 auto;
 	margin-bottom: 30px;
-	width: 300px;
+	max-width: 300px;
 	visibility: hidden;
 }
 .column {
 	display: inline-block;
 	height: auto;
-	width: 100px;
+	width: 80px;
 	margin: -2px;
 	padding: none;
 }
 .cell {
-	width: 100px;
-	height: 100px;
-	max-width: 100px;
-	max-height: 100px;
+	width: 80px;
+	height: 80px;
+	max-width: 80px;
+	max-height: 80px;
 	text-align: center;
 
 	font-family: 'Helvetica Neue';
 	font-weight: 100;
-	font-size: 80px;
+	font-size: 60px;
 	color: #fdd654;
 }
 .top {
@@ -108,7 +106,7 @@ h1 {
 	visibility: hidden;
 }
 .push {
-	height: 40px;
+	height: 84px;
 }
 footer {
 	background-color: rgba(253, 253, 253, 0.2);

@@ -51,7 +51,7 @@ function navCells(){
 		alreadyWon = true;
 		alert(cellArray[2][0] + " WON!");
 	}
-	else if(playedCells == 9){
+	else if(playedCells == 9 && alreadyWon != true){
 		toggleVisibility('playagain');
 		alert("No one won.");
 	}
