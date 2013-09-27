@@ -105,10 +105,13 @@ h1 {
 }
 #startgame {
 	text-align: center;
-	/*margin-top:40%;*/
 	visibility: visible;
 }
-#playagain {
+#playrs {
+	text-align: center;
+	visibility: hidden;
+}
+#playagainbtn {
 	visibility: hidden;
 }
 .push {

@@ -2,6 +2,10 @@ var turn = 2;
 var playedCells = 0;
 var alreadyWon = false;
 
+function playBall(numPlayr){
+	turn = numPlayr;
+}
+
 if (typeof window.DeviceMotionEvent != 'undefined') {
     // Shake sensitivity (a lower number is more)
     var sensitivity = 80;
@@ -64,29 +68,29 @@ function navCells(){
 	}
 	for(x=0; x<=2; ++x){
 		if(cellArray[0][x] == cellArray[1][x] && cellArray[1][x] == cellArray[2][x] && cellArray[0][x] != "&nbsp;"){
-			toggleVisibility('playagain');
 			alreadyWon = true;
 			alert(cellArray[0][x] + " WON!");
+			toggleVisibility('playagainbtn');
 		}
 		if(cellArray[x][0] == cellArray[x][1] && cellArray[x][1] == cellArray[x][2] && cellArray[x][0] != "&nbsp;"){
-			toggleVisibility('playagain');
 			alreadyWon = true;
 			alert(cellArray[x][0] + " WON!");
+			toggleVisibility('playagainbtn');
 		}
 	}
 	if(cellArray[0][0] == cellArray[1][1] && cellArray[1][1] == cellArray[2][2] && cellArray[0][0] != "&nbsp;" ){
-		toggleVisibility('playagain');
 		alreadyWon = true;
 		alert(cellArray[0][0] + " WON!");
+		toggleVisibility('playagainbtn');
 	}
 	if(cellArray[2][0] == cellArray[1][1] && cellArray[1][1] == cellArray[0][2] && cellArray[2][0] != "&nbsp;" ){
-		toggleVisibility('playagain');
 		alreadyWon = true;
 		alert(cellArray[2][0] + " WON!");
+		toggleVisibility('playagainbtn');
 	}
 	else if(playedCells == 9 && alreadyWon != true){
-		toggleVisibility('playagain');
 		alert("No one won.");
+		toggleVisibility('playagainbtn');
 	}
 }
 
@@ -101,6 +105,16 @@ function toggleVisibility(id){
 		document.getElementById(id).style.visibility = 'hidden';
 	}
 	else {
-		document.getElementById(id).style.visibility = 'hidden';
+		document.getElementById(id).style.visibility = 'visible';
 	}
 }
+
+function EvalSound(soundobj){
+	var thissound=document.getElementById(soundobj);
+	thissound.play(); 
+	setTimeout( function() { window.location.reload(); }, 1600);
+}
+
+
+
+

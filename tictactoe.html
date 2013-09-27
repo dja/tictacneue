@@ -41,20 +41,24 @@
 </header>
 
 <div class="container">
-		<input type="button" value="Start Game &rsaquo;" class="simplebtn" id="startgame" onclick="switchVisibility('startgame', 'gameboard');">
+		<input type="button" value="Start Game &rsaquo;" class="simplebtn" id="startgame" onclick="switchVisibility('startgame', 'playrs');">
+		<br />
+		<input type="button" value="Choose X &rsaquo;" class="simplebtn" id="playrs" onclick="switchVisibility('playrs', 'gameboard'); playBall(2);">
+		<br />
+		<input type="button" value="Choose O &rsaquo;" class="simplebtn" id="playrs" onclick="switchVisibility('playrs', 'gameboard'); playBall(1);">
 
 	<div id="gameboard">
-		<div class="column" onclick="playIt()">
+		<div class="column" onclick="playIt();">
 			<div class="cell top left" id="cell0_0">&nbsp;</div>
 			<div class="cell middle left" id="cell1_0">&nbsp;</div>
 			<div class="cell bottom left" id="cell2_0">&nbsp;</div>
 		</div>
-		<div class="column" onclick="playIt()">
+		<div class="column" onclick="playIt();">
 			<div class="cell top center" id="cell0_1">&nbsp;</div>
 			<div class="cell middle center" id="cell1_1">&nbsp;</div>
 			<div class="cell bottom center" id="cell2_1">&nbsp;</div>
 		</div>
-		<div class="column" onclick="playIt()">
+		<div class="column" onclick="playIt();">
 			<div class="cell top right" id="cell0_2">&nbsp;</div>
 			<div class="cell middle right" id="cell1_2">&nbsp;</div>
 			<div class="cell bottom right" id="cell2_2">&nbsp;</div>
@@ -62,16 +66,10 @@
 	</div>
 	<div>
 		<div style="display:none;">
-		    <audio id="playagainsound" src="sounds/playagain.mp3" controls preload="auto" autobuffer></audio>
+		    <audio id="playagain" src="sounds/playagain.mp3" controls preload="auto" autobuffer></audio>
 		</div>
 
-		<script>
-		function EvalSound(soundobj) 
-		    { var thissound=document.getElementById(soundobj); thissound.play(); 
-		setTimeout( function() { window.location.reload(); }, 1600); }
-		</script>
-
-		<input type="button" value="Play Again &rsaquo;" class="simplebtn" id="playagain" onclick="EvalSound('playagainsound')">
+		<input type="button" value="Play Again &rsaquo;" class="simplebtn" id="playagainbtn" onclick="EvalSound('playagain')">
 	</div>
 	<div class="push"></div>
 </div>
