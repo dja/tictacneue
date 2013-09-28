@@ -1,6 +1,8 @@
-* html, body {
+* {
+	margin: 0;
+}
+html, body {
 	height: 100%;
-	background-color: #232323;
 	min-width: 450px;
 }
 #supersized-loader { position:absolute; top:50%; left:50%; z-index:0; width:60px; height:60px; margin:-30px 0 0 -30px; text-indent:-999em;}
@@ -38,11 +40,13 @@ h1 {
 	vertical-align: middle;
 	margin: 0 auto;
 	width: 450px;
-	height: 800px;
 	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-	overflow: auto;
+	margin-bottom:-40px;
+}
+.container:after {
+	content: "";
+	display:block;
+	height: 40px;
 }
 #gameboard {
 	margin: 0 auto;
