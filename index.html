@@ -62,7 +62,8 @@ switch(rand_style_no)
 <div class="container">
 	<div class="menu" id="start">
 		<input type="button" value="Start Game &rsaquo;" class="simplebtn" id="startgame" onclick="switchDisplay('startgame', 'playr1'); toggleDisplay('playr2');">
-		<br />
+		</div>
+	<div class="menu" id="playrchooser">
 		<input type="button" value="Choose X &rsaquo;" class="simplebtn" id="playr1" onclick="toggleDisplay('playr1'); toggleDisplay('playr2'); toggleVisibility('gameboard'); playBall(1);">
 		<br />
 		<input type="button" value="Choose O &rsaquo;" class="simplebtn" id="playr2" onclick="toggleDisplay('playr1'); toggleDisplay('playr2'); toggleVisibility('gameboard'); playBall(2);">

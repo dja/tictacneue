@@ -30,7 +30,6 @@ h1 {
 }
 .menu {
 	position: absolute;
-	top: 25%;
 	margin: 0 auto;
 	width: 450px;
 }
@@ -98,8 +97,14 @@ h1 {
 	font-weight: 100;
 	color: #dc145b;
 }
+#start {
+	margin-top: 40px;
+}
 #startgame {
 	text-align: center;
+}
+#playrchooser {
+	margin-top: 35px;
 }
 #playr1 {
 	text-align: center;
@@ -113,7 +118,7 @@ h1 {
 	visibility: hidden;
 }
 .push {
-	height: 140px;
+	height: 100px;
 }
 footer {
 	background-color: rgba(253, 253, 253, 0.2);
@@ -131,8 +136,11 @@ footer a:link, footer a:visited, footer a:hover {
 }
 
 @media screen and (device-aspect-ratio: 2/3) {
-	.menu {
-		top: 45%;
+	#start {
+		margin-top: 30%;
+	}
+	#playrchooser {
+		margin-top: 25%;
 	}
 	#gameboard {
 		margin-top:15%;
@@ -145,8 +153,11 @@ footer a:link, footer a:visited, footer a:hover {
 	}
 }
 @media screen and (device-aspect-ratio: 40/71) {
-	.menu {
-		top: 45%;
+	#start {
+		margin-top: 30%;
+	}
+	#playrchooser {
+		margin-top: 25%;
 	}
 	#gameboard {
 		margin-top:15%;
@@ -159,8 +170,11 @@ footer a:link, footer a:visited, footer a:hover {
 	}
 }
 @media screen and (device-aspect-ratio: 3/4) {
-	.menu {
-		top: 45%;
+	#start {
+		margin-top: 30%;
+	}
+	#playrchooser {
+		margin-top: 25%;
 	}
 	#gameboard {
 		margin-top:15%;
