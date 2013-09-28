@@ -5,6 +5,7 @@ var alreadyWon = false;
 function playBall(numPlayr){
 	turn = numPlayr;
 	document.getElementById('start').style.display = 'none';
+	document.getElementById('playrchooser').style.display = 'none';
 }
 
 if (typeof window.DeviceMotionEvent != 'undefined') {
