@@ -37,7 +37,7 @@ h1 {
 .container {
 	text-align: center;
 	vertical-align: middle;
-	margin: 0 auto -40px auto;
+	margin: 0 auto;
 	width: 450px;
 	height: 800px;
 	min-height: 100%;
@@ -130,8 +130,45 @@ footer a:link, footer a:visited, footer a:hover {
 	text-decoration: none;
 }
 
-@media (max-width: 450px){
-	* html, body {
-		background-size: 450px;
+@media screen and (device-aspect-ratio: 2/3) {
+	.menu {
+		top: 45%;
+	}
+	#gameboard {
+		margin-top:15%;
+	}
+	.push {
+		height: 20px;
+	}
+	footer {
+		height: 24px;
+	}
+}
+@media screen and (device-aspect-ratio: 40/71) {
+	.menu {
+		top: 45%;
+	}
+	#gameboard {
+		margin-top:15%;
+	}
+	.push {
+		height: 20px;
+	}
+	footer {
+		height: 24px;
+	}
+}
+@media screen and (device-aspect-ratio: 3/4) {
+	.menu {
+		top: 45%;
+	}
+	#gameboard {
+		margin-top:15%;
+	}
+	.push {
+		height: 20px;
+	}
+	footer {
+		height: 24px;
 	}
 }
