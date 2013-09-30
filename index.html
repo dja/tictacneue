@@ -9,16 +9,17 @@
 <meta name="viewport" content="width=450px">
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 <meta name="apple-mobile-web-app-capable" content="no" />
-<link rel="apple-touch-icon" href="touch-icon-iphone.png" />
-<link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png" />
-<link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png" />
-<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png" />
+<link rel="apple-touch-icon" href="img/touch-icon/touch-icon-iphone.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="img/touch-icon/touch-icon-ipad.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="img/touch-icon/touch-icon-iphone-retina.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="img/touch-icon/touch-icon-ipad-retina.png" />
 
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
 <link rel="stylesheet" type="text/css" href="style.css">
 <script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript" src="http://fast.fonts.net/jsapi/8611331d-6a62-4a8b-9cd8-1719224d8c1c.js"></script>
+<script type="text/javascript" src="js/fontdetect.js"></script>
+<!-- <script type="text/javascript" src="http://fast.fonts.net/jsapi/8611331d-6a62-4a8b-9cd8-1719224d8c1c.js"></script> -->
 
 <!-- Background Sizing -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
@@ -52,6 +53,7 @@ switch(rand_style_no)
 		document.write('<link rel="stylesheet" href="style.css" type="text/css">');
 		break;
 	}
+
 </script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -65,12 +67,14 @@ switch(rand_style_no)
 </script>
 </head>
 
-<body onload="navCells();">
+<body onload="navCells(); detectHelv();">
 <header>
 <h1>TicTacNeue</h1>
 </header>
 
 <div class="container">
+	<div><input type="button" value="Helvetica Neue is not installed. Try Again? &rsaquo;" class="simplebtn" id="fontdetect" onclick="window.location.reload();"></div>
+
 	<div class="menu" id="start">
 		<input type="button" value="Start Game &rsaquo;" class="simplebtn" id="startgame" onclick="switchDisplay('startgame', 'playr1'); toggleDisplay('playr2');">
 		</div>

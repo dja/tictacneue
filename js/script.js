@@ -2,6 +2,15 @@ var turn = 1;
 var playedCells = 0;
 var alreadyWon = false;
 
+function detectHelv(){
+	var d = new Detector();
+	if(d.detect('Helvetica Neue') == false){
+		toggleDisplay('startgame');
+		toggleDisplay('startgame');
+		toggleDisplay('fontdetect');
+	}
+}
+
 function playBall(numPlayr){
 	turn = numPlayr;
 	document.getElementById('start').style.display = 'none';

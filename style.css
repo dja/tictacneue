@@ -19,13 +19,13 @@ header {
 	border-top: 2px solid #dc145b;
 }
 a {
-	font-family: 'Helvetica Neue';
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
 	font-weight: 100;
 	font-size: 80px;
 	color: #dc145b;
 }
 h1 {
-	font-family: 'Helvetica Neue';
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
 	font-weight: 100;
 	font-size: 50px;
 	color: #dc145b;
@@ -68,7 +68,7 @@ h1 {
 	max-height: 80px;
 	text-align: center;
 
-	font-family: 'Helvetica Neue';
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
 	font-weight: 100;
 	font-size: 60px;
 	color: #dc145b;
@@ -97,7 +97,7 @@ h1 {
 	background: none;
 	border: none;
 	font-size: 40px;
-	font-family: 'Helvetica Neue';
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
 	font-weight: 100;
 	color: #dc145b;
 }
@@ -121,14 +121,17 @@ h1 {
 #playagainbtn {
 	visibility: hidden;
 }
-.push {
-	height: 100px;
+#fontdetect {
+	display: none;
+	font-size: 24px;
+	background-color: rgba(255,255,255,0.5);
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
 }
 footer {
-	background-color: rgba(253, 253, 253, 0.2);
-	padding: 40px;
+	background-color: rgba(0,0,0,.3);
+	padding: 20px;
 	font-size: 30px;
-	font-family: 'Helvetica Neue';
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
 	font-weight: 100;
 	width: auto;
 	height: 40px;
